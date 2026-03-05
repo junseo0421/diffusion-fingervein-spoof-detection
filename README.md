@@ -51,7 +51,7 @@ classifier/train.py는 아래 라이브러리를 사용합니다.
 ### 4.1 학습 (Train)
 ddpm/main.py는 absl flags 기반입니다. 주요 설정은 다음과 같습니다.
 
-- T=1000, batch_size=2, lr=2e-4 (코드/보고서 설정과 일치) 
+- T=1000, batch_size=2, lr=2e-4
 - 로그/체크포인트 저장: --logdir (기본 ./logs/HKPU_1)
 
 
@@ -91,7 +91,7 @@ logs/<Dataset_name>/generated_images_last/
 └── ...
 ```
 
-- 생성 결과 중 완전한 노이즈/붕괴 사례는 제외하고, 정맥 구조가 유지된 샘플을 fake 데이터로 사용했습니다.
+- 생성 결과 중 완전한 노이즈 or 붕괴 사례는 제외하고, 정맥 구조가 유지된 샘플을 fake 데이터로 사용했습니다.
 
 ---
 
